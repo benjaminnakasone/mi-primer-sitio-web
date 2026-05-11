@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKA - Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <script src="registro.js"></script>
+</head>
+<body>
+
+<div class="div-principal">
+
+    <h1 class="titulo-marca">NAKA</h1>
+    <h1>ZAPATILLAS DEPORTIVAS</h1>
+
+    <div class="div-form">
+
+        <h1>REGISTRATE</h1>
+
+        <form>
+            <p>Nombre: <input type="text" id="nombre" placeholder="Ingrese su nombre" size="18"></p>
+            <p>Apellido: <input type="text" id="apellido" placeholder="Ingrese su apellido" size="18"></p>
+            <p>Email: <input type="email" id="email" placeholder="Ingrese su email" size="18"></p>
+            <p>Contraseña: <input type="password" id="clave" placeholder="Ingrese su clave" size="18"></p>
+            <p>Repetir Contraseña: <input type="password" id="clave2" placeholder="Repita su clave" size="18"></p>
+        </form>
+
+        <button onclick="validar()">REGISTRARSE</button>
+        <button onclick="limpiar()">LIMPIAR</button>
+
+        <p id="resultado-login"></p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

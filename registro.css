@@ -1,0 +1,47 @@
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 3px yellow;
+    text-align: center;
+}
+
+.div-principal {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    background-color: #1a1a1a;
+    width: 100%;
+    height: 700px;
+}
+
+.div-form {
+    border: solid yellow;
+    width: 400px;
+    height: 380px;
+    text-align: center;
+    background-color: #2a2a2a;
+    color: white;
+    display: inline-table;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.titulo-marca {
+    color: yellow;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px white;
+}
+
+#resultado-login {
+    color: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}

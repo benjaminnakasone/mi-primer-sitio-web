@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKA - Pago</title>
+    <link rel="stylesheet" href="pago.css">
+    <script src="pago.js" defer></script>
+</head>
+<body>
+
+<div class="div-principal">
+
+    <h1 class="titulo-marca">NAKA</h1>
+    <h1>PRECIO Y METODO DE PAGO</h1>
+
+    <div class="div-resumen">
+
+        <h1>RESUMEN DEL PEDIDO</h1>
+
+        <form>
+            <p><strong>Marca:</strong> <span id="res-marca">-</span></p>
+            <p><strong>Tipo:</strong> <span id="res-tipo">-</span></p>
+            <p><strong>Talle:</strong> <span id="res-talle">-</span></p>
+            <p><strong>Estilo:</strong> <span id="res-estilo">-</span></p>
+            <br>
+            <p>Precio base: <span id="res-base">-</span></p>
+            <p>IVA (21%): <span id="res-iva">-</span></p>
+            <p>Envio: <span id="res-envio">-</span></p>
+        </form>
+
+        <br>
+        <p id="resultado-precio"></p>
+        <br>
+        <button onclick="window.location.href='./seleccion.html'">VOLVER</button>
+
+    </div>
+
+    <div class="div-pago">
+
+        <h1>METODO DE PAGO</h1>
+
+        <form>
+
+            <p>Metodo de pago:
+                <select id="metodo-pago">
+                    <option value="0"> -- Seleccione -- </option>
+                    <option value="1">Tarjeta de Credito/Debito</option>
+                    <option value="2">Transferencia Bancaria</option>
+                    <option value="3">Efectivo (Rapipago / Pago Facil)</option>
+                </select>
+            </p>
+
+            <p>Cuotas:
+                <select id="cuotas">
+                    <option value="0"> -- Seleccione -- </option>
+                    <option value="1">1 cuota sin interes</option>
+                    <option value="3">3 cuotas sin interes</option>
+                    <option value="6">6 cuotas sin interes</option>
+                    <option value="12">12 cuotas</option>
+                </select>
+            </p>
+
+            <br>
+            <p><u>Datos bancarios para transferencia:</u></p>
+            <p>CBU: 0150253700000000025309</p>
+            <p>Alias: benjamin.nakasone</p>
+            <p>Titular: Benjamin Fernando Nakasone Uema</p>
+
+            <br>
+            <p>Comentarios: <textarea rows="3" cols="25"></textarea></p>
+
+        </form>
+
+        <button onclick="confirmar()">CONFIRMAR COMPRA</button>
+        <br><br>
+        <p id="resultado-pago"></p>
+        <p id="resultado-confirmacion"></p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAKA - Seleccion</title>
+    <link rel="stylesheet" href="seleccion.css">
+    <script src="seleccion.js"></script>
+</head>
+<body>
+
+<div class="div-principal">
+
+    <h1 class="titulo-marca">NAKA</h1>
+    <h1>ELEGÍ TU ZAPATILLA</h1>
+
+    <div class="div-seleccion">
+
+        <h1>CONFIGURAR ZAPATILLA</h1>
+
+        <form>
+
+            <p>Tipo de uso:
+                <select id="tipo">
+                    <option value="0"> -- Seleccione -- </option>
+                    <option value="1">Running</option>
+                    <option value="2">Futbol</option>
+                    <option value="3">Basketball</option>
+                    <option value="4">Training</option>
+                    <option value="5">Tennis</option>
+                    <option value="6">Lifestyle</option>
+                </select>
+            </p>
+
+            <p>Marca:
+                <select id="marca">
+                    <option value="0"> -- Seleccione -- </option>
+                    <option value="1">Nike</option>
+                    <option value="2">Adidas</option>
+                    <option value="3">Puma</option>
+                    <option value="4">New Balance</option>
+                    <option value="5">Reebok</option>
+                    <option value="6">Asics</option>
+                </select>
+            </p>
+
+            <p>Talle (EUR):
+                <select id="talle">
+                    <option value="0"> -- Seleccione -- </option>
+                    <option value="1">38</option>
+                    <option value="2">39</option>
+                    <option value="3">40</option>
+                    <option value="4">41</option>
+                    <option value="5">42</option>
+                    <option value="6">43</option>
+                    <option value="7">44</option>
+                    <option value="8">45</option>
+                </select>
+            </p>
+
+            <p>Estilo:
+                <select id="estilo">
+                    <option value="0"> -- Seleccione -- </option>
+                    <option value="1">Classic</option>
+                    <option value="2">Retro</option>
+                    <option value="3">Modern</option>
+                    <option value="4">Futurista</option>
+                    <option value="5">Low-Top</option>
+                    <option value="6">High-Top</option>
+                </select>
+            </p>
+
+            <p>Comentarios: <textarea rows="3" cols="25"></textarea></p>
+
+        </form>
+
+        <button onclick="mostrar()">PREVISUALIZAR</button>
+        <button onclick="continuar()">CONTINUAR</button>
+        <button onclick="limpiar()">LIMPIAR</button>
+
+        <p id="resultado-seleccion"></p>
+
+    </div>
+
+    <div class="div-preview">
+
+        <h1>TU SELECCION</h1>
+
+        <p>👟</p>
+        <br>
+        <p id="preview-texto">Presione PREVISUALIZAR para ver su seleccion</p>
+        <br>
+        <p>Complete todos los campos y presione CONTINUAR para ver el precio y metodos de pago.</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>
